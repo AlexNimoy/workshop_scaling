@@ -1,0 +1,54 @@
+** SIEGE 4.1.7
+** Preparing 30 concurrent users for battle.
+The server is now under siege...
+
+Lifting the server siege...
+Transactions:		      150    hits
+Availability:		      100.00 %
+Elapsed time:		       10.44 secs
+Data transferred:	        0.01 MB
+Response time:		     2018.67 ms
+Transaction rate:	       14.37 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		       29.00
+Successful transactions:      150
+Failed transactions:	        0
+Longest transaction:	     2040.00 ms
+Shortest transaction:	     2000.00 ms
+ 
+** SIEGE 4.1.7
+** Preparing 40 concurrent users for battle.
+The server is now under siege...
+
+Lifting the server siege...
+Transactions:		      200    hits
+Availability:		      100.00 %
+Elapsed time:		       10.95 secs
+Data transferred:	        0.01 MB
+Response time:		     2016.45 ms
+Transaction rate:	       18.26 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		       36.83
+Successful transactions:      200
+Failed transactions:	        0
+Longest transaction:	     2040.00 ms
+Shortest transaction:	     2000.00 ms
+ 
+** SIEGE 4.1.7
+** Preparing 50 concurrent users for battle.
+The server is now under siege...
+Lifting the server siege...
+Transactions:		      250    hits
+Availability:		      100.00 %
+Elapsed time:		       10.94 secs
+Data transferred:	        0.01 MB
+Response time:		     2017.20 ms
+Transaction rate:	       22.85 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		       46.10
+Successful transactions:      250
+Failed transactions:	        0
+Longest transaction:	     2030.00 ms
+Shortest transaction:	     2000.00 ms
+ 
+sync_sleep/2

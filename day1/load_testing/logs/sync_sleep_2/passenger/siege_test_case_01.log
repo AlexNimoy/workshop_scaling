@@ -1,0 +1,56 @@
+** SIEGE 4.1.7
+** Preparing 30 concurrent users for battle.
+The server is now under siege...
+
+Lifting the server siege...
+Transactions:		        5    hits
+Availability:		      100.00 %
+Elapsed time:		       10.63 secs
+Data transferred:	        0.00 MB
+Response time:		     6022.00 ms
+Transaction rate:	        0.47 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		        2.83
+Successful transactions:        5
+Failed transactions:	        0
+Longest transaction:	    10030.00 ms
+Shortest transaction:	        0.00 ms
+ 
+** SIEGE 4.1.7
+** Preparing 40 concurrent users for battle.
+The server is now under siege...
+
+Lifting the server siege...
+Transactions:		        0    hits
+Availability:		        0.00 %
+Elapsed time:		       10.95 secs
+Data transferred:	        0.00 MB
+Response time:		        0.00 ms
+Transaction rate:	        0.00 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		        0.00
+Successful transactions:        0
+Failed transactions:	        0
+Longest transaction:	        0.00 ms
+Shortest transaction:	        0.00 ms
+ 
+** SIEGE 4.1.7
+** Preparing 50 concurrent users for battle.
+The server is now under siege...
+Lifting the server siege...siege aborted due to excessive socket failure; you
+can change the failure threshold in $HOME/.siegerc
+
+Transactions:		        0    hits
+Availability:		        0.00 %
+Elapsed time:		       10.95 secs
+Data transferred:	        0.19 MB
+Response time:		        0.00 ms
+Transaction rate:	        0.00 trans/sec
+Throughput:		        0.02 MB/sec
+Concurrency:		        0.09
+Successful transactions:        0
+Failed transactions:	     1032
+Longest transaction:	       10.00 ms
+Shortest transaction:	        0.00 ms
+ 
+0.00 secs:     189 bytes ==> GET  /sync_sleep/2
