@@ -1,7 +1,9 @@
 require 'ostruct'
 
 class ApplicationController < ActionController::Base
-  def sync_sleep; end
+  def sync_sleep
+    sleep(1)
+  end
 
   def info; end
 
@@ -18,6 +20,25 @@ class ApplicationController < ActionController::Base
       info = Net::HTTP.get(URI("http://#{ip}:#{port}/info"))
       [id, ip, port, info]              
     end.sort
+  end
+
+  def complex_query
+    # Cache key includes any parameters that might affect the result
+    cache_key = "complex_query:#{params[:id]}"
+    
+    if params[:no_cache]
+      @result = perform_complex_calculation
+    else
+      @result = cache.fetch(cache_key, expires_in: 5.minutes) do
+        perform_complex_calculation
+      end
+    end
+
+    render json: {
+      result: @result,
+      cached: !params[:no_cache],
+      timestamp: Time.current
+    }
   end
 
   private
@@ -59,5 +80,14 @@ class ApplicationController < ActionController::Base
   helper_method :seconds
   def seconds
     params.fetch(:seconds, 0).to_f
+  end
+
+  def perform_complex_calculation
+    # Simulate complex calculation
+    sleep(2)
+    {
+      data: "Complex calculation result #{rand(1000)}",
+      processed_at: Time.current
+    }
   end
 end
